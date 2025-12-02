@@ -566,7 +566,7 @@ h2.list{
     select the bullets on the unordered list in the list styling section using the tag name and pseudo-class selectors
 */
 /* ----- */
-#list>ul>li{
+#list>ul>li::selection{
     font-size: 3rem;
     content: "\2730";
 }
