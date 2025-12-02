@@ -67,7 +67,7 @@
     add the universal CSS selector to the styles below
 */
 /* ----- */
-* {
+*{
     font-family: var(--fonts);
     line-height: 1.3;
     color: var(--dk-gray);
@@ -80,7 +80,7 @@
     select the body by its tag name
 */
 /* ----- */
-body {
+body{
     box-sizing: border-box;
     background-color: var(--lt-gray);
 }
@@ -94,8 +94,7 @@ body {
     select the header and footer by tag name
 */
 /* ----- */
-header, 
-footer {
+header,footer{
     padding: 2rem 1rem;
     background-color: var(--white);
     width: 100%;
@@ -327,7 +326,7 @@ span {
     select the h2 in the second section using the ID, tag name, and child/descendant selectors
 */
 /* ----- */
-{
+#nav > h2{
     padding: 12px 0;
     background-color: var(--green);
     color: var(--white);
@@ -339,7 +338,7 @@ span {
     select the unordered list in the navigation using the tag names and child/descendant selector
 */
 /* ----- */
-{
+#nav > ul{
     display: block;
     list-style-type: none;
     padding: 0;
@@ -352,7 +351,7 @@ span {
     select the list items in the navigation using the tag names and child/descendant selector
 */
 /* ----- */
-{
+#nav > ul > li{
     display: block;
     width: 100%;
 }
@@ -363,7 +362,7 @@ span {
     select the anchor tags in the navigation using the tag names and child/descendant selectors
 */
 /* ----- */
-{
+#nav>a{
     display: block;
     width: 90%;
     margin: 16px auto;
@@ -384,7 +383,7 @@ span {
     select the anchor tags in the navigation on hover using the tag names, pseudo-class, and child/descendant selectors
 */
 /* ----- */
-{
+#nav>a:hover{
     background-color: var(--white);
     color: var(--green);
     box-shadow: var(--box-shadow-sm);
@@ -399,7 +398,7 @@ span {
     select the h2 in the third section using the class name selector
 */
 /* ----- */
-{
+h2.third-h2{
     padding: 12px 0;
     background-color: var(--dv-fuchsia);
     color: var(--white);
@@ -411,7 +410,7 @@ span {
     select all of the inputs, labels, select dropdowns and text areas on the page by tag name
 */
 /* ----- */
-{
+input,label,select{
     display: block;
     width: 95%;
     margin: 0.5rem auto;
@@ -425,7 +424,7 @@ span {
     select all of the inputs and selects by tag name
 */
 /* ----- */
-{
+input,select{
     height: 2rem;
     border: 2px solid var(--dk-gray);
 }
@@ -436,7 +435,7 @@ span {
     select all of the inputs on focus (by tag name/pseudo-class) on the page
 */
 /* ----- */
-{
+input:focus{
     outline: 4px solid var(--orange);
     outline-offset: 2px;
     border: none;
@@ -448,7 +447,7 @@ span {
     select all of the inputs on focus (by tag name/pseudo-class) on the page
 */
 /* ----- */
-{
+input:focus{
     outline-color: var(--dv-dk-blue);
 }
 
@@ -458,7 +457,7 @@ span {
     select the labels in the form using the tag name/element selector
 */
 /* ----- */
-{
+label{
     font-size: 1.25rem;
     margin-top: 16px;
 }
@@ -469,7 +468,7 @@ span {
     select the spans in the form using the class name selector
 */
 /* ----- */
-{
+.required{
     font-size: 1.5rem;
     font-weight: bold;
     display: inline;
@@ -482,7 +481,7 @@ span {
     select all of the submit buttons (by tag name/type attribute) on the page
 */
 /* ----- */
-{
+input[submit]{
     display: block;
     margin: 32px auto 16px;
     width: 100%;
@@ -505,7 +504,7 @@ span {
     select all of the submit buttons on hover (by tag name/type attribute name) on the page
 */
 /* ----- */
-{
+input[submit]:hover{
     box-shadow: var(--box-shadow-sm);
     color: var(--purple);
     background-color: var(--lt-gray);
@@ -517,7 +516,7 @@ span {
     select all of the submit buttons on focus (by tag name/type attribute/pseudo-class) on the page
 */
 /* ----- */
-{
+input[submit]:focus{
     box-shadow: var(--box-shadow-sm);
     outline: 4px solid var(--dv-dk-blue);
     outline-offset: 1px;
@@ -532,7 +531,7 @@ span {
     select the h2 in the list styling section using the class name selector
 */
 /* ----- */
-{
+h2.list{
     color: var(--blue);
 }
 
@@ -542,7 +541,7 @@ span {
     select the unordered list in the list styling container using the id and tag name selectors
 */
 /* ----- */
-{
+#list>ul{
     display: block;
     width: fit-content;
     margin: 32px auto;
@@ -554,7 +553,7 @@ span {
     select all of the list items in the list styling container using the ID and tag name selectors
 */
 /* ----- */
-{
+#list>li{
     font-size: 1.25rem;
     line-height: 1.35;
     margin-bottom: 8px;
@@ -567,7 +566,7 @@ span {
     select the bullets on the unordered list in the list styling section using the tag name and pseudo-class selectors
 */
 /* ----- */
-{
+#list>ul>li{
     font-size: 3rem;
     content: "\2730";
 }
